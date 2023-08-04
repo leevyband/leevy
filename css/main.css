@@ -78,7 +78,7 @@ ul {
 }
 
 .logo-box::before {
-    content: url(/images/leevy-logo-yellow-temp.svg);
+    content: url(images/leevy-logo-yellow-temp.svg);
     display: block;
     width: 120px;
     margin-top: 30px;
@@ -90,7 +90,7 @@ ul {
 
 
 .logo-footer.logo-box::before {
-    content: url(/images/leevy-logo-temp-white.svg);
+    content: url(images/leevy-logo-temp-white.svg);
     width: 80px;
     padding: 0;
     margin-top: 14px;
@@ -270,7 +270,7 @@ nav ul li.menu-icon{
 }
 
 .menu-icon::before {
-    content: url(/images/instagram.svg);
+    content: url(images/instagram.svg);
     display: block;
     width: 30px;
     margin-top: 30%;
