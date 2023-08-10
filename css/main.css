@@ -12,6 +12,20 @@ body  {
     background: #fafafa;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+a img {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none;
+}
+
 p {
     font-size: 1em;
     line-height: 1.4em;
@@ -19,7 +33,7 @@ p {
 }
 
 h1 {
-    font-size: 1.4em;
+    font-size: 2em;
     font-family: 'Special Elite', sans-serif;
 }
 
@@ -66,10 +80,12 @@ ul {
 
 .logo-box-show {
     opacity: 0;
+    transition: 400ms ease-in-out;
 }
 
 .mobile-nav>.logo-box-show {
     opacity: 100;
+    transition: 400ms ease-in-out;
 }
 
 
@@ -78,7 +94,7 @@ ul {
 }
 
 .logo-box::before {
-    content: src(images/leevy-logo-yellow-temp.svg);
+    content: url(/images/leevy-logo-yellow-temp.svg);
     display: block;
     width: 120px;
     margin-top: 30px;
@@ -90,7 +106,7 @@ ul {
 
 
 .logo-footer.logo-box::before {
-    content: src(images/leevy-logo-temp-white.svg);
+    content: url(/images/leevy-logo-temp-white.svg);
     width: 80px;
     padding: 0;
     margin-top: 14px;
@@ -329,7 +345,6 @@ a img {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   text-shadow:  none;
-  font-size: 1.2em;
   font-weight: 600;
   border-color: black;
   border-width: 0.2px;
@@ -435,10 +450,11 @@ a img {
     max-width: 100%;
 }
 
-.hero-home.hero-image-template {
-    background-size: 800px;
-    background-color: #F7D675;
-
+.hero-image-template+.hero-image img {
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+    height: 100vh;
 }
 
 .hero-image-template-alt {
@@ -625,6 +641,58 @@ a img {
 
 }
 
+.tour-container {
+    background-color: #fafafa;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em 0 1em 0;
+    box-shadow: rgba(0, 0, 0, .4) 0px 15px 20px;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+.tour-event {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-around;
+}
+
+.tour-item {
+    flex: 50%;
+}
+
+.tour-event-black {
+    background-color: black;
+    color: #fafafa;
+}
+
+.tour-location p {
+    font-family: 'Special Elite';
+    font-weight: 600;
+}
+
+.tour-venue p {
+    font-weight: 600;
+}
+
+.tour-tickets a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
 .footer {
     width: 100%;
     height: auto;
@@ -710,6 +778,8 @@ a img {
         color: #fafafa;
     }
 
+   
+
 
 
 }
@@ -724,7 +794,7 @@ a img {
     }
     
     h1 {
-        font-size:2em;
+        font-size: 3em;
     }
     
     h2 {
@@ -905,6 +975,11 @@ a img {
     .hero-image-container img {
         max-width: 800px;
     }
+
+    .tour-item {
+        flex: 25%;
+    }
+    
 
 
 
