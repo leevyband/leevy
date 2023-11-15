@@ -39,7 +39,10 @@ h1 {
 
 h2 {
     font-size: 1.4em;
+    line-height: 1em;
     font-family: 'Special Elite', sans-serif;
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
 h2 ~ h3 {
@@ -744,6 +747,7 @@ a img {
 .footer h2 {
     font-size: 1.4em;
     font-family: 'Special Elite';
+    margin-top: 1em;
 }
 
 .footer-container {
