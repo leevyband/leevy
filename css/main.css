@@ -685,6 +685,42 @@ a img {
     text-decoration: underline;
 }
 
+.shop-grid {
+    max-width: 900px;
+    margin: 10em auto 10em auto;
+    display: grid;
+        gap: 80px;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 1000px;
+        grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.shop-grid h3 {
+    font-family: 'Special Elite';
+}
+
+.shop-item {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    max-width: 400px;
+    border-radius: 10px;
+    height: auto;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, .4) 0px 30px 30px;
+}
+
+.shop-photo {
+    max-width: 100%;
+}
+
+
+.shop-photo img {
+    object-fit: contain;
+    max-width: 90%;
+}
+
 
 
 
@@ -776,6 +812,10 @@ a img {
     .sticky {
         position: absolute;
         color: #fafafa;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
    
@@ -942,6 +982,21 @@ a img {
     
     }
 
+    nav.dark ul li a {
+        color: black;
+        text-shadow: none;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+        color: #1F4D7A;
+    
+    }
+
+    .dark.logo-box::before {
+        content: url(/images/leevy-logo-temp-black.svg);
+    }
+
     #menuToggle span{
         display: none;
     }
@@ -978,6 +1033,10 @@ a img {
 
     .tour-item {
         flex: 25%;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
     
 
