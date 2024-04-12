@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fadein.css">
         <link rel="stylesheet" href="/css/lite-yt-embed.css" />
+        <link rel="stylesheet" href="/css/flickity.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta property="og:site_name" content="Leevy">
         <meta name="title" property="og:title" content="About | Leevy | Irish band">
@@ -47,7 +48,7 @@
         </nav>
     </header>
 
-    <div class="hero-image-template heroFade" style="background-image: url(images/leevy-top-road-2.webp);">
+    <div class="hero-image-template heroFade" style="background-image: url(images/leevy_irish_band_IMG_9748.webp);">
         <div class="home-text">
             <div class="image-holder heroFadeDelayed"><h1>About</h1></div>
                   
@@ -69,29 +70,37 @@
                 
     </div>
 
-    <div class="block-white fadeUp">
-        <div class="container-short">
-            <h2>Leevy. Ceol nua ó ghlúin nua.</h2>
+    <div class="block-white">
+        <div class="container-short fadeUp">
+            <h2>Leevy.</h2>
             <p>Leevy is a five-piece band from the Múscraí Gaeltacht in West Cork, Ireland. The band is led by singer songwriter Amhlaoibh McSweeney.</p>
         </div>
     </div>
 
-    <div class="hero-image-container fadeUp">
-        <img src="images/DSC_0466_export.jpg" alt="Leevy music band Ireland Irish" loading="lazy">
+    <div class="scroll-reveal fadeUp">
+        <div class="photo-carousel-holder-bigger">        
+            <div class="carousel-bigger" data-flickity='{"autoPlay": 2000, "imagesLoaded": true, "percentPosition": false, "wrapAround": true, "fullscreen": true}'>
+                <img src="images/leevy_irish_band_R1-08574-018A.webp" alt="Leevy music band Ireland Irish" loading="lazy" height="400">
+                <img alt="Leevy band Cork Ireland" src="images/leevy_irish_band_R1-00350-011A.webp" loading="lazy" height="200">
+                <img alt="Leevy new Irish band music" src="images/leevy_irish_band_R1-08574-006A.webp" loading="lazy" height="200">
+                <img alt="Irish music artist act Ireland" src="images/leevy_irish_band_IMG_9575.webp" loading="lazy" height="200">
+                <img alt="Leevy band singing concert Cork" src="images/leevy_irish_band_IMG_9562.webp" loading="lazy" height="200">
+            </div>
+        </div>
     </div>
 
-    <section class="block-half block-pale container">
+    <div class="block-half block-pale container">
         <div class="container-short" style="text-align: center;">
-            <h2>Stay up to date with Leevy.</h2>
-            <h3>New tour dates, new releases, all that good stuff.</h3>
-            <div><a href="/contact.html" class="button button-black">Join our mail list.</a></div>
+            <h2 class="fadeUp">Stay up to date with Leevy.</h2>
+            <h3 class="fadeUpDelayed">New tour dates, new releases, all that good stuff.</h3>
+            <div class="fadeUpDelayed"><a href="/contact.html" class="button button-black">Join our mail list.</a></div>
         </div>
        
-    </section>
+    </div>
     
-    <div class="footer fadeUp">
+    <div class="footer">
         <div class="footer-container">
-        <div class="footer-grid">
+        <div class="footer-grid fadeUp">
             <div><a class="logo-footer" href="/index.html"><div class="logo-box logo-footer"></div></a></div>
             <div><a href="/index.html"><h2>Home</h2></a></div>
             <div><a href="/about.html"><h2>About</h2></a></div>
@@ -100,7 +109,7 @@
             <div><a href="/contact.html"><h2>Contact</h2></a></div>
         </div>
         </div>
-        <div class="copyright">
+        <div class="copyright fadeUp">
             <p>©2023 All rights reserved.</p>
             <p>Design by <a href="http://www.paprika.ie" target="_blank" style="text-decoration: underline;">Paprika Creative</a></p>
         </div>
@@ -114,6 +123,7 @@
     <script src="js/init.js"></script>
     <script src="js/fadein.js"></script>
     <script src="js/lite-yt-embed.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
 
 
 </body>
