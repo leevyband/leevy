@@ -116,9 +116,7 @@ ul {
     margin-left: 0px;
 }
 
-.logo-box.dark::before {
-    content: url(/images/leevy-logo-temp-black.svg) !important;
-}
+
 
 .show-mobile {
     display: block;
@@ -255,9 +253,6 @@ header {
     transition-delay: 1s;
   }
 
-  .dark > #menuToggle span {
-    background-color: black;
-  }
 
 nav {
     display: block;
@@ -794,7 +789,8 @@ a img {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 90%;
+    max-width: 90%;
+    width: 500px;
 }
 
 
@@ -1071,7 +1067,9 @@ a img {
     
     }
 
-    
+    .logo-box.dark::before {
+        content: url(/images/leevy-logo-temp-black.svg) !important;
+    }
 
     #menuToggle span{
         display: none;
