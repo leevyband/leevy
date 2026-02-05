@@ -14,7 +14,6 @@ section.visible {
   transform: translate(0, 40px); transition: all 1.5s;
 
 }
-
   
 .fadeUp.visible {
   opacity: 1;
@@ -27,6 +26,12 @@ section.visible {
   transition-delay: 0.5s;
 
 }
+
+.fadeIn {
+  opacity: 0; transition: all 1.5s;
+}
+
+.fadeIn.visible {opacity: 1;}
 
 .heroFadeUp {
   animation: heroFadeUp 2s;
